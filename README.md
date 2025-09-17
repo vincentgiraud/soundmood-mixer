@@ -1,23 +1,74 @@
-# ✨ Welcome to Your Spark Template!
-You've just launched your brand-new Spark Template Codespace — everything’s fired up and ready for you to explore, build, and create with Spark!
+# SoundMood Mixer
 
-This template is your blank canvas. It comes with a minimal setup to help you get started quickly with Spark development.
+Discover music that matches your mood through a playful, beautiful quiz interface.
 
-🚀 What's Inside?
-- A clean, minimal Spark environment
-- Pre-configured for local development
-- Ready to scale with your ideas
-  
-🧠 What Can You Do?
+## Mission
+SoundMood Mixer helps users discover music genres that match their current emotional state through an intuitive, visually appealing mood-selection experience.
 
-Right now, this is just a starting point — the perfect place to begin building and testing your Spark applications.
+## Key Features
+- Mood selection grid with emoji-driven buttons
+- Hardcoded genre-matching algorithm to surface relevant recommendations
+- Animated result cards with descriptions and visual feedback
+- Persistent last-result state so returning users see their previous discovery
+- Polished visual design: gradients, glassmorphism, and subtle animations
 
-🧹 Just Exploring?
-No problem! If you were just checking things out and don’t need to keep this code:
+## Design & Experience
+- Visual tone: modern, playful, and elegant with a touch of whimsy
+- Color strategy: gradient purple → cyan background with high-contrast foregrounds
+- Typography: Inter for clean, readable text
+- Animations: subtle, purposeful transitions to enhance delight without distraction
 
-- Simply delete your Spark.
-- Everything will be cleaned up — no traces left behind.
+## Getting Started
+Prerequisites: Node.js (v18+ recommended) and npm or pnpm
 
-📄 License For Spark Template Resources 
+Clone the repository and install dependencies:
 
-The Spark Template files and resources from GitHub are licensed under the terms of the MIT license, Copyright GitHub, Inc.
+```bash
+git clone https://github.com/vincentgiraud/soundmood-mixer.git
+cd soundmood-mixer
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Structure (high level)
+- `src/` — application source files
+  - `App.tsx`, `main.tsx` — app entry points
+  - `components/` — reusable UI components and design system
+  - `styles/` — theme and global styles
+  - `assets/` — images and brand assets
+- `src/prd.md` — Product Requirements Document (design intent and decisions)
+
+## Development Notes
+- Animations use Framer Motion and are tuned to be performant on typical devices
+- State persistence uses the `useKV` hook to store the last result for returning users
+- Tailwind CSS is used for responsive layout and consistent spacing
+
+## Contributing
+All contributions, bug reports, and feature requests are welcome.
+- Create an issue to discuss larger changes before implementing
+- Fork the repo and open a pull request with a clear description of your changes
+- Follow existing code style and add tests where applicable
+
+## License
+This project is released under the MIT License. See the `LICENSE` file for details.
+
+---
+
+If you'd like the README translated to French or expanded with screenshots and usage examples, tell me what you'd like included.
