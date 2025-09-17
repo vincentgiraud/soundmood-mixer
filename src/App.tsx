@@ -5,7 +5,6 @@ import { Badge } from '@/components/ui/badge'
 import { useKV } from '@github/spark/hooks'
 import { motion, AnimatePresence } from 'framer-motion'
 import logoImage from '@/assets/images/logo.png'
-import heroBackground from '@/assets/images/Designer.png'
 
 interface GenreMatch {
   genre: string
@@ -86,12 +85,9 @@ function App() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
-        <div className="absolute inset-0 bg-background/40 backdrop-blur-sm"></div>
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/20">
+        <div className="absolute inset-0 bg-background/10 backdrop-blur-sm"></div>
       </div>
       
       {/* Content */}
