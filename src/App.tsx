@@ -108,7 +108,7 @@ function App() {
             <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl font-bold mb-4 text-white drop-shadow-lg"
+              className="text-4xl font-bold mb-4 text-foreground bg-background/90 px-6 py-2 rounded-xl backdrop-blur-sm"
             >
               SoundMood Mixer
             </motion.h1>
@@ -116,7 +116,7 @@ function App() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-white/90 text-lg drop-shadow"
+              className="text-foreground/80 text-lg bg-background/80 px-4 py-2 rounded-lg backdrop-blur-sm"
             >
               Discover music genres that match your current mood
             </motion.p>
@@ -131,10 +131,10 @@ function App() {
               exit={{ opacity: 0, scale: 0.95 }}
               className="space-y-6"
             >
-              <Card className="backdrop-blur-md bg-white/10 border-white/20 shadow-2xl">
+              <Card className="backdrop-blur-md bg-card/95 border-border/20 shadow-2xl">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl text-white">How are you feeling today?</CardTitle>
-                  <CardDescription className="text-white/80">
+                  <CardTitle className="text-2xl text-foreground">How are you feeling today?</CardTitle>
+                  <CardDescription className="text-foreground/70">
                     Choose the mood that best describes how you're feeling right now
                   </CardDescription>
                 </CardHeader>
@@ -162,8 +162,8 @@ function App() {
                   animate={{ opacity: 1, y: 0 }}
                   className="text-center"
                 >
-                  <p className="text-white/80 mb-2">Your last result:</p>
-                  <Badge variant="secondary" className="text-sm px-3 py-1 bg-white/20 text-white border-white/30">
+                  <p className="text-foreground/80 mb-2">Your last result:</p>
+                  <Badge variant="secondary" className="text-sm px-3 py-1 bg-secondary/90 text-secondary-foreground border-border/30">
                     {lastResult.emoji} {lastResult.genre}
                   </Badge>
                 </motion.div>
@@ -227,9 +227,11 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="text-center mt-12 text-white/70 text-sm drop-shadow"
+            className="text-center mt-12 text-foreground/60 text-sm bg-background/80 px-4 py-2 rounded-lg backdrop-blur-sm inline-block"
           >
-            Discover new music that resonates with your soul 🎶
+            <div className="inline-block">
+              Discover new music that resonates with your soul 🎶
+            </div>
           </motion.footer>
         </div>
       </div>
