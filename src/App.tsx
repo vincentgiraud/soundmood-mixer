@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { useKV } from '@github/spark/hooks'
 import { motion, AnimatePresence } from 'framer-motion'
-import logoImage from '@/assets/images/Designer_(1).png'
+import logoImage from '@/assets/images/logo.png'
 import heroBackground from '@/assets/images/Designer.png'
 
 interface GenreMatch {
